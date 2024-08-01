@@ -19,6 +19,7 @@ export function ActiveToggleDropdownItem({
   const router = useRouter();
   return (
     <DropdownMenuItem
+      variant="destructive"
       disabled={isPending}
       onClick={() => {
         startTransition(async () => {
